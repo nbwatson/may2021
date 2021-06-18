@@ -1,0 +1,215 @@
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: Helvetica, Helvetica Neue, Arial;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: rgb(225, 231, 225);
+    
+  }
+  
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .header-container {
+    border: 12px solid #494949;
+   
+    background-image: url(../img/money1.jpg);
+  }
+  
+  .footer-container {
+      border-top: 20px solid #000;
+      border: 12px solid #494949;
+    font-weight: bolder;
+    text-shadow:  0.07em 0 rgb(8, 125, 221), 0 0.07em whitesmoke, -0.07em 0 greenyellow, 0 -0.07em rgb(0, 0, 0);
+  }
+  
+
+  .footer-container {
+    background-color: #294969;
+  }
+  
+  .title {
+    font-size:  45px ; 
+    text-align: center;
+    color:  rgba(173, 212, 210, 0.842);
+    font-weight: bolder;
+    text-shadow:  0.07em 0 rgb(8, 125, 221), 0 0.07em whitesmoke, -0.07em 0 greenyellow, 0 -0.07em rgb(0, 0, 0);
+    font-family: Times, "Times New Roman", Georgia, serif;
+    letter-spacing: .12em;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: #9a7859;
+  }
+  
+  nav a:hover,
+  nav a:visited {
+    color: white;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .main {
+    padding: 30px 0;
+  }
+  
+  .main article h1 {
+    font-size: 2em;
+    background-color: rgba(173, 170, 170, 0.582) 
+  }
+  
+  
+  .footer-container footer {
+    font-size:  35px ; 
+    text-align: center;
+    color:  rgba(173, 212, 210, 0.842);
+    font-weight: bolder;
+    text-shadow:  0.07em 0 rgb(8, 125, 221), 0 0.07em whitesmoke, -0.07em 0 greenyellow, 0 -0.07em rgb(0, 0, 0);
+    font-family: Times, "Times New Roman", Georgia, serif;
+    letter-spacing: .12em;
+   
+  }
+
+  .main aside {
+    color: rgb(3, 3, 3);
+    padding: 0px 5% 10px;
+    border-top: 20px solid #b7ebc3;
+    background: #f5f0ce;
+    
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    margin: 10px 20px;
+    padding: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+}
+  
+  /*************************
+  Media Queries
+  *************************/
+  
+  @media only screen and (min-width: 480px) {
+  
+    nav a {
+      float: left;
+      width: 30%;
+      margin: 0 0 0 5%;
+      padding: 25px 1%;
+      margin-bottom: 0;
+    }
+  
+    nav li:first-child a {
+      margin-left: 0;
+    }
+  
+    nav li:last-child a {
+      margin-right: 0;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 768px),
+         only screen and (min-width: 700px) and (orientation: landscape) {
+  
+    .title {
+      float: left;
+      font-size: 1.4em;
+    }
+  
+    nav {
+      float: right;
+      width: 60%;
+    }
+  
+    nav a {
+      padding: 15px 1%;
+    }
+    .main aside {
+      float: right;
+      width: 38%;
+    }
+  
+    .main article {
+      float: left;
+      width: 57%;
+    }
+  
+    
+    
+  }
+  
+  @media only screen and (min-width: 800px) {
+  
+    .wrapper {
+      width: 1026px;
+      margin: 0 auto;
+    }
+  
+    .title {
+      font-size: 2em;
+    }
+  
+    nav a {
+      padding: 25px 1%;
+    }
+    
+  }
+  
+  html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+  body{margin:0}
+
+  h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}
+
+  /*************************
+  Clearfix
+  *************************/
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    display: table;
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  .clearfix {
+    *zoom: 1;
+  }
+  
+  
