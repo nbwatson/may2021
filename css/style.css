@@ -1,7 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     background-color: #999;
     display: flex;
     flex-direction: column;
@@ -9,9 +12,7 @@ body {
 }
 
 header {
-    height: 15%;
-    max-height: 200px;
-    background-color: #779ae7f3;
+    background-color: #002984;
 }
 
 main {
@@ -22,13 +23,37 @@ main {
     flex-grow: 1;
 }
 
+button {
+    padding: 1rem;
+    background-color: #999;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-prinary {
+    background-color: #002984;
+    color: white;
+}
+
 .column {
     width: 95%;
     height: 100%;
-}
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+}   
 
 #column-1 {
-    background-color: white;
+    background-color: #757de8;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
 #column-2 {
@@ -36,17 +61,52 @@ main {
 }
 
 #column-3 {
-    background-color: white;
+    background-color: #757de8;
 }
 
 footer {
-    background-color: #779ae7f3;
-    text-align: center;
+    background-color: #002984;
 }
 
-li {
-    line-height: 1.75;
-  }
+/* navigation menu */
+#nav-menu {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#nav-menu li {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-menu li a {
+    padding: 6px 12px;
+    border-bottom: 2px solid red;
+    width: 100%;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: #757de8;
+}   
+
+#nav-menu li a:hover {
+    border-bottom-color: chartreuse;
+    background-color: #3f51b5;
+}
+
+#amanda {
+}
 
 @media screen and (min-width: 800px) {
     main {
@@ -55,15 +115,14 @@ li {
 
     .column {
         width: 28%;
-        text-align: center;
     }
-  
-}
 
-@media (min-width: 1025px) {
-    .nav {
-      display: flex;
-      flex-direction: row;
-    justify-content: space-around;}
-    
+    /* navigation menu */
+    #nav-menu {
+        flex-direction: row;
     }
+
+    #nav-menu li a {
+        max-width: 200px;
+    }
+}
